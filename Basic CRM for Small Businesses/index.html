@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic CRM for Small Businesses</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Basic CRM for Small Businesses</h2>
+      <input type="text" id="customerName" placeholder="Enter Customer Name" />
+      <input
+        type="text"
+        id="customerEmail"
+        placeholder="Enter Customer Email"
+      />
+      <input
+        type="text"
+        id="customerOrder"
+        placeholder="Enter Order Information"
+      />
+      <button onclick="addCustomer()">Add Customer</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Order</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="customerTable"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
